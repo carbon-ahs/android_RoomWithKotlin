@@ -5,8 +5,8 @@ import android.os.Bundle
 import androidx.activity.viewModels
 import androidx.appcompat.app.AppCompatActivity
 import androidx.lifecycle.LiveData
+import androidx.lifecycle.Observer
 import androidx.recyclerview.widget.LinearLayoutManager
-import androidx.room.InvalidationTracker.Observer
 import com.axiagroups.roomwithkotlin.adapter.ContactsAdapter
 import com.axiagroups.roomwithkotlin.databinding.ActivityMainBinding
 import com.axiagroups.roomwithkotlin.viewmodel.ContactViewModel
@@ -38,4 +38,6 @@ class MainActivity : AppCompatActivity() {
         })
     }
 }
+
+
 

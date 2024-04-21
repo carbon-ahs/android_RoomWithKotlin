@@ -4,11 +4,8 @@ import android.content.Intent
 import android.os.Bundle
 import android.view.View
 import android.widget.Toast
-import androidx.activity.enableEdgeToEdge
 import androidx.activity.viewModels
 import androidx.appcompat.app.AppCompatActivity
-import androidx.core.view.ViewCompat
-import androidx.core.view.WindowInsetsCompat
 import com.axiagroups.roomwithkotlin.databinding.ActivityCreateContactBinding
 import com.axiagroups.roomwithkotlin.model.Contacts
 import com.axiagroups.roomwithkotlin.viewmodel.ContactViewModel
@@ -18,7 +15,7 @@ class CreateContact : AppCompatActivity() {
     private lateinit var binding : ActivityCreateContactBinding
 
     // variable to access the ViewModel class
-    val viewModel : ContactViewModel by viewModels()
+    val viewModel : ContactViewModel by viewModels<ContactViewModel>()
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         // inflate the layout
